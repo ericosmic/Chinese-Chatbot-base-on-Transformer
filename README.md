@@ -4,7 +4,7 @@ this is a chiese chatbot base on the Transformer mechanism(attention is all you 
 
 Python 3.6.6 \
 tensorflow 1.11 \
-konlpy \
+jieba \
 pandas \
 sklearn
 
