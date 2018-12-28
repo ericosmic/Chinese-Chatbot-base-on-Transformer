@@ -28,9 +28,9 @@ if __name__ == '__main__':
         input += i 
         input += " "
     '''
-    input="如何学好古代汉语"    
-    print('Question: ',input)
-    predic_input_enc, predic_input_enc_length = data_ch.enc_processing([input], char2idx)
+    question = input('q:')    
+    #print('Question: ',input)
+    predic_input_enc, predic_input_enc_length = data_ch.enc_processing([question], char2idx)
     # 학습 과정이 아니므로 디코딩 입력은 
     # 존재하지 않는다.(구조를 맞추기 위해 넣는다.)
     predic_output_dec, predic_output_dec_length = data_ch.dec_output_processing([""], char2idx)
@@ -67,5 +67,5 @@ if __name__ == '__main__':
         
     # 예측한 값을 인지 할 수 있도록
     # 텍스트로 변경하는 부분이다.
-    print('Question: ',input)
+    print('Question: ',question)
     
