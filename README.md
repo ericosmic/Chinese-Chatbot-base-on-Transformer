@@ -8,7 +8,7 @@ jieba \
 pandas \
 sklearn
 
-#useage
-python main_ch.py
-#predict
+# useage
+python main_ch.py 
+# predict
 python predict.py
